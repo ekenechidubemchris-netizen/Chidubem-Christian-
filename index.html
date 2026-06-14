@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chi's Kitchen & Catering Services</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  />
+
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+
+  <!-- ✅ FIX: style.css must be in the SAME folder as index.html -->
+  <link rel="stylesheet" href="style.css" />
+   <link rel="icon"  href="C:\Users\USER\Downloads\favicon_io (2)">
+</head>
+
+<body>
+
+  <!-- ======================================================
+       NAVBAR
+  ====================================================== -->
+  <nav class="navbar navbar-expand-lg sticky-top" id="mainNav">
+    <div class="container-fluid px-4">
+
+      <a class="navbar-brand" href="#top">
+        <!-- If you have logo.png, keep this. Otherwise remove the img tag -->
+         <div class="logo-placeholder">C</div>
+        <img src="logo.png" alt="Chi's Kitchen Logo" onerror="this.style.display='none'" />
+        <span class="brand-text">Chi's Kitchen</span>
+      </a>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarMenu"
+        aria-controls="navbarMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-end" id="navbarMenu">
+        <ul class="navbar-nav gap-2">
+
+          <li class="nav-item">
+            <a class="nav-link" href="#top">Home</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#comments">Comments</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" role="button"
+               data-bs-toggle="dropdown" aria-expanded="false">
+              Explore
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end">
+              <li><a class="dropdown-item" href="#about">About</a></li>
+              <li><a class="dropdown-item" href="#works">My Works</a></li>
+              <li><a class="dropdown-item" href="#comments">Comments</a></li>
+              <li><a class="dropdown-item" href="#contact">Contact</a></li>
+            </ul>
+          </li>
+
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ======================================================
+       HERO
+  ====================================================== -->
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <p class="hero-eyebrow">Welcome to</p>
+      <h1>Chi's <em>Kitchen</em></h1>
+      <p class="hero-sub">
+        Recipes made with love, stories told through flavour,<br>
+        and a table always set for one more.
+      </p>
+      <div class="divider"><span class="divider-diamond">◆</span></div>
+      <a href="#about" class="hero-cta">Explore the Menu</a>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       ABOUT
+  ====================================================== -->
+  <section id="about" class="section-about">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Who I Am</p>
+        <h2>A Passion for Honest Food</h2>
+      </div>
+      <p class="about-text">
+        Hi! I'm Chi — home cook, food lover, and firm believer that the best
+        meals come from simple, honest ingredients. This blog is my space to
+        share the dishes I love, the recipes I've perfected over the years,
+        and the stories behind every plate. Whether you're feeding a family
+        or cooking for one, there's always a seat at Chi's table.
+      </p>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       MY WORKS — 4 cards in a proper grid
+  ====================================================== -->
+  <section id="works" class="section-works">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Featured</p>
+        <h2>My Works</h2>
+      </div>
+
+      <!-- ✅ FIX: works-grid CSS now makes these display as 2x2 cards -->
+      <div class="works-grid">
+
+        <article class="work-card">
+          <div class="work-image">🍲</div>
+          <div class="work-body">
+            <p class="work-category">Comfort Food</p>
+            <h3 class="work-title">Mama's Pepper Soup</h3>
+            <p class="work-desc">
+              A warming bowl of fragrant spices and tender protein —
+              the first recipe I ever learned by heart.
+            </p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-image">🍛</div>
+          <div class="work-body">
+            <p class="work-category">Main Course</p>
+            <h3 class="work-title">Jollof Rice Delight</h3>
+            <p class="work-desc">
+              Smoky, party-style jollof with caramelised tomatoes
+              and a secret blend of spices.
+            </p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-image">🥗</div>
+          <div class="work-body">
+            <p class="work-category">Light &amp; Fresh</p>
+            <h3 class="work-title">Mango Garden Salad</h3>
+            <p class="work-desc">
+              Crispy greens, ripe mango chunks, and a honey-lime
+              dressing that brightens every bite.
+            </p>
+          </div>
+        </article>
+
+        <article class="work-card">
+          <div class="work-image">🍰</div>
+          <div class="work-body">
+            <p class="work-category">Dessert</p>
+            <h3 class="work-title">Chin Chin Tart</h3>
+            <p class="work-desc">
+              A playful fusion dessert: crumbly chin chin base
+              filled with silky vanilla cream.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       COMMENTS
+  ====================================================== -->
+  <section id="comments" class="section-comments">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Join the Conversation</p>
+        <h2>Comments</h2>
+      </div>
+
+      <div class="comments-layout">
+
+        <!-- LEFT: form -->
+        <div class="comment-form">
+          <h3>Leave a Comment</h3>
+
+          <div id="commentAlert" class="alert-box alert-error d-none">
+            Please fill in both your name and comment.
+          </div>
+          <div id="commentSuccess" class="alert-box alert-success d-none">
+            Comment posted! Thank you 🎉
+          </div>
+
+          <div class="form-group">
+            <label for="commentName">Your Name</label>
+            <input type="text" id="commentName" placeholder="e.g. Amaka O." autocomplete="name" />
+          </div>
+
+          <div class="form-group">
+            <label for="commentText">Your Comment</label>
+            <textarea id="commentText" placeholder="What did you think of this dish?"></textarea>
+          </div>
+
+          <!-- ✅ onclick connects to addComment() in script.js -->
+          <button class="btn-submit" onclick="addComment()">Post Comment</button>
+        </div>
+
+        <!-- RIGHT: list -->
+        <div class="comments-list">
+          <h3>What Readers Say</h3>
+          <div id="commentsList">
+
+            <div class="comment-item">
+              <div class="comment-meta">
+                <span class="comment-author">Ngozi B.</span>
+                <span class="comment-date">June 2025</span>
+              </div>
+              <p class="comment-text">
+                The jollof rice recipe is absolutely perfect!
+                I've tried it twice and my family won't stop asking for more. 🔥
+              </p>
+            </div>
+
+            <div class="comment-item">
+              <div class="comment-meta">
+                <span class="comment-author">David K.</span>
+                <span class="comment-date">May 2025</span>
+              </div>
+              <p class="comment-text">
+                Chi, your pepper soup recipe saved my Sunday dinner.
+                The instructions were so clear — even I could follow them!
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       CONTACT
+  ====================================================== -->
+  <section id="contact" class="section-contact">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-label">Get In Touch</p>
+        <h2>Contact Chi's Kitchen</h2>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-card">
+          <div class="contact-icon">📧</div>
+          <h4>Email</h4>
+          <p>chiskitchen100@gmail.com</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📱</div>
+          <h4>Phone / WhatsApp</h4>
+          <p>+234 909 036 7552</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📍</div>
+          <h4>Location</h4>
+          <p>lagos state,Nigeria</p>
+        </div>
+
+        <div class="contact-card">
+          <div class="contact-icon">📸</div>
+          <h4>Instagram</h4>
+          <p>@chiskitchen</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ======================================================
+       FOOTER
+  ====================================================== -->
+  <footer class="site-footer">
+    <p>© 2025 <span>Chi's Kitchen &amp; Catering Services</span> — Made with ❤️ and flavour.</p>
+  </footer>
+
+
+  <!-- ✅ Bootstrap JS — MUST come before script.js -->
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ✅ Our JS — loaded AFTER Bootstrap -->
+  <script src="script.js"></script>
+
+</body>
+</html>
