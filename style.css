@@ -44,7 +44,7 @@
 }
 
 html {
-  scroll-behavior: smooth;  /* ✅ smooth scroll fallback (JS also handles this) */
+  scroll-behavior: smooth;  
 }
 
 body {
@@ -63,7 +63,7 @@ body {
   transition: box-shadow 0.3s ease;
 }
 
-/* ✅ FIX: scrolled class added by script.js for extra shadow */
+
 .navbar.scrolled {
   box-shadow: 0 4px 30px rgba(0,0,0,0.5);
 }
@@ -78,7 +78,7 @@ body {
 .navbar-brand img {
   height: 48px;
   width: auto;
-  mix-blend-mode: multiply;   /* removes white PNG background */
+  mix-blend-mode: multiply;  
   filter: brightness(1.1);
 }
 
@@ -441,7 +441,6 @@ section {
 .alert-error  { background:#fde8e6; color:#922; border:1px solid #f5c6c6; }
 .alert-success{ background:#e6f7ee; color:#1a6b3a; border:1px solid #b3dfc4; }
 
-/* ✅ Bootstrap's d-none still works — just keeping our override safe */
 .d-none { display: none !important; }
 
 /* Comment items */
@@ -484,7 +483,6 @@ section {
   background-color: #F0EAE0;
 }
 
-/* ✅ FIX: contact-grid was missing — cards stacked vertically */
 .contact-grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
